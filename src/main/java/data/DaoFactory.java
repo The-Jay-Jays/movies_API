@@ -11,8 +11,6 @@ public class DaoFactory {
     private static final Config config = new Config();
     public enum ImplType {MYSQL, IN_MEMORY};
 
-    //Notice we have two values here
-
     public static MoviesDao getMoviesDao(ImplType implementationType) {
 
         switch (implementationType) {
